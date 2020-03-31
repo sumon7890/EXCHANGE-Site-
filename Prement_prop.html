@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>iDBSE Wallet - International Dollar Buy Sell Exchange Wallet | Payment Proof</title>
+
+
+    <link rel="icon" href="https://idbsewallet.com/public/img/favicon_462193.png" > 
+
+    
+	<!-- Google Fonts -->	
+	<!-- <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Lato" rel="stylesheet">  -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Subrayada" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+	
+	<!-- Lightbox2 stylesheet -->
+	<link rel="stylesheet" type="text/css" href="https://idbsewallet.com/public/css/new/animate.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://idbsewallet.com/public/css/new/lightbox.css" />
+	
+	<!-- bootstrap  styleSheet -->
+	<link rel="stylesheet" href="https://idbsewallet.com/public/css/bootstrap.css">
+
+	<!-- font-awesome  styleSheet -->
+	<!-- <link rel="stylesheet" href="https://idbsewallet.com/public/css/font-awesome.css"> --> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> 
+
+	<!-- wow animate  -->
+	<link rel="stylesheet" href="https://idbsewallet.com/public/css/new/animate.css">
+
+	<!-- custom styleSheet -->
+	<link rel="stylesheet" href="https://idbsewallet.com/public/css/new/style.css">
+
+	<!-- responsive -->
+	<link rel="stylesheet" href="https://idbsewallet.com/public/css/new/responsive.css">
+
+	<!-- jquery script -->	
+	<script src="https://idbsewallet.com/public/js/new/jquery-3.1.1.js" type="text/javascript"></script>
+	
+	<!-- Start of Smartsupp Live Chat script -->
+	
+	
+	
+</head>
+<style>
+	.navbar{min-height:65px; /*background:rgba(0,0,0,0.5);*/ top:0;}
+	.nav-background ul.nav-ul{padding-top: 0;}
+	.carousel-caption{color: #42B20F; text-shadow: 0 1px 5px rgba(255,255,255,.6);}
+	.app-dowbload{
+	    width: 25%;
+	    margin: 0 20%;
+	  }
+	 .app-dowbload:hover{
+	    padding: 1px;
+    	}
+    	@media only screen and (max-width: 600px) {
+        	.resClock{
+        	    display: none;
+        	}
+    	    
+    	}
+</style>
+<body class="wow fadeIn">
+	<script>
+         $(document).ready(function(){
+             hitting();
+             setInterval(function(){
+                 hitting();
+             },5000);
+         });
+
+         function hitting(){
+
+             $.ajax({
+                url: 'https://idbsewallet.com/home/check_user',
+                type: 'POST',
+             }).done(function(response) {
+                 console.log(response);
+                if(response=="1"){
+                  $(".online-icon > span > i").addClass("active_icon");
+                  $("#status").html("Online");
+                }else{
+                  $(".online-icon > span > i").removeClass("active_icon");
+                  $("#status").html("Offline");
+                }
+            });
+         }
+     </script>
+     
+     <script>
+        $(document).ready(function(){
+            hitting();
+            setInterval(hitting,5000);
+        });
+
+        function hitting(){
+            $.ajax({
+                url: 'https://idbsewallet.com/home/c_counter',
+                type: 'POST',
+            })
+            .done(function(response) {
+                //console.log(response);
+            });
+        }
+        
+    </script>
+     
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5a719a47d7591465c7073ee1/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+	<nav class="navbar navbar-default nav-background">
+	  <div class="container" ng-app="myApp">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header nv-hed">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <p class="resClock" ng-controller='TimeCtrl as timeCtrl' style="color: #fff;position: absolute;top: 5px;">
+	          <span ng-cloak>{{ timeCtrl.clock.time | date:'medium'}}</span>
+	      </p>
+	      <a class="navbar-brand nav-brand" href="#"><img style="max-width: 235px; padding: 15px 10px 10px 10px;" class="img-responsive" src="https://idbsewallet.com/public/img/logo_286302.png"></a>
+	    </div>
+	    
+	    
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      
+	      <style>
+	      	.btn-new{border: 1px solid #C81D26; padding: 10px !important; margin-top: 10px !important; background: #C81D26; color: #fff !important;}
+	      	.btn-new:hover{background: #fff !important; color: #C81D26 !important;}
+	      </style>
+	      <style>
+            .active .collapse .md15 .desktop {color: #000;}
+	        .md15 { 
+	                width: 100%;
+                    height: auto;
+                    display: block;
+                    margin: -15px;
+                    padding: -15px;
+                    overflow: auto;
+                    clear: both;
+                    position: absolute;
+                    top: 28px;
+                    right: 95px;
+	        }
+	        .md15 .info { float: left; overflow: auto; font-weight: bold; color: #fff; display: block; text-align: right; }
+	        .md15 .online-icon span i { 
+	            color: #0bc10b; 
+	            box-shadow: 0 0 6px rgba(18, 193, 18, 0.6), 0 0 12px rgba(106, 255, 0, 0.7);
+	            border-radius: 50%; 
+	            font-size: 18px;
+	            
+	        }
+	        .online { display:block; }
+	        .on, .off {display: none;}
+	      	.btn-new{ border: 1px solid #9C27B0; padding: 10px !important; margin-top: 10px !important; background: #9C27B0; color: #fff !important;}
+	      	.btn-new:hover{ background: #fff !important; color: #9C27B0 !important;}
+	      	.online-icon {width: 50%; float: left; text-align: right;}
+	      	.active_icon { color: #00ba51; box-shadow: 0 0 6px rgba(18, 193, 18, 0.6), 0 0 12px rgba(106, 255, 0, 0.7); border-radius: 50%;}
+	      	.helpln {
+	      	    color: rgba(255,255,255,0.8); 
+	      	    display: block; 
+	      	    position: relative; 
+	      	    top: 12px; 
+	      	    text-align: right; 
+	      	    margin-right: -15px; 
+	      	    margin-bottom: 8px;
+	      	    font-weight:bold;
+	      	}
+	      	@media (max-width: 991px){
+	      	    .helpln {
+	      	        margin-right: 0;
+	      	        margin-top: 20px;
+	      	    }
+	      	    .nav-background {
+	      	        background: black;
+	      	    }
+	      	    .nv-hed {
+	      	            margin-bottom: 32px;
+	      	    }
+	      	    .md15 {
+	      	        top: 75px;
+	      	    }
+	      	    .nav-background .nav-brand {
+                    margin-top: -15px;
+	      	    }
+	      	    
+	      	}
+	      	@media (max-width: 420px){
+	      	    .online-icon {
+	      	        margin-left: 31px;
+	      	    }
+	      	    
+	      	}
+	      </style>
+	      <div class="md15">
+	          <div class="online-icon">
+                <span style="color: rgb(255,255,255);font-weight:bold;"> Admin </span>
+                <span>
+                    <i class="fa fa-circle fa-lg" aria-hidden="true"></i>
+                    <span style="color: rgb(255,255,255);font-weight:bold;" id="status">Online</span>
+                </span>
+            </div>
+
+	      </div>
+	      <span class="helpln">Helpline: 01957505060 OR  (009607454646 IMO/ Viber/ whatsapp )<br> Skype: idbsewallet</span>
+	      <ul class="nav navbar-nav navbar-right nav-ul">
+	        <li><a href="https://idbsewallet.com/">Home</a></li>	        
+	        <li><a href="https://idbsewallet.com/#service">Service</a></li>	        
+	        <li><a href="https://idbsewallet.com/#about">About</a></li>	        
+	        <li><a href="https://idbsewallet.com/home/rate">$ Price</a></li>	        
+	        <li><a href="https://idbsewallet.com/#faq">FAQs</a></li>
+	        <li><a href="https://idbsewallet.com/home/payment_proof">Payment Proof</a></li>   	        
+	        <li><a href="https://idbsewallet.com/#contact">Contact</a></li>
+	        <li><a class="btn-new" style="margin-right: 5px;" href="https://idbsewallet.com/access/subscriber/login">Sign In</a></li>
+	        <li><a class="btn-new" href="https://idbsewallet.com/home/signup">Sign Up</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+<!-- nav end -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular.min.js"></script>
+<script>
+    var module = angular.module('myApp', []);
+    function TimeCtrl($interval) {
+	var timeController = this;
+    
+    timeController.clock = { time: "", interval: 1000 };
+    
+     $interval(function () { 
+     timeController.clock.time = Date.now();}, 
+     timeController.clock.interval);
+    }
+</script>
+
+
+
+<style>
+  #pagination {margin-bottom: 30px;}
+	#pagination a, #pagination strong{
+		background: #3c3c3c;
+		color: #fff;
+		width: 25px;
+		height: 25px;
+		display: inline-block;
+		text-align: center;
+		line-height: 25px;
+		border-radius: 4px;
+	}
+	#pagination strong {
+		background: #ddd;
+		color: #3c3c3c;
+	}
+	#pagination a:last-child {width: 55px;}
+	#pagination a:hover {text-decoration: none;}
+    .navbar {
+      background: rgba(0,0,0,0.5);
+    }
+</style>
+
+<div class="container-fluid" style="background:#ddd;height: 5px; margin-top: 100px;"></div>
+
+<div class="container-fluid">
+    <div class="row">
+   
+    
+        <div class="col-md-4">
+              	            <h3>Buy Proof</h3>
+	            <table class="table table-bordered">
+	                <tr>
+	                    <th>Sl</th>
+	                    <th width="100">Date</th>
+	                    <th>Name</th>
+	                    <!--th>Send Method</th-->
+	                    <th>Receive Method</th>
+	                    <th>Amount</th>
+	                </tr>
+	                
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>1</td>
+	                    <td>2019-09-03</td>
+	                    <td>saikot07</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/perfect_money.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>5.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>2</td>
+	                    <td>2019-09-03</td>
+	                    <td>MD MOBASHIR</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>11.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>3</td>
+	                    <td>2019-09-03</td>
+	                    <td>belal hossain</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/neteller.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>50.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>4</td>
+	                    <td>2019-09-02</td>
+	                    <td>belal hossain</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>31.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>5</td>
+	                    <td>2019-09-02</td>
+	                    <td>Umme Fatema</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>11.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>6</td>
+	                    <td>2019-09-02</td>
+	                    <td>Manira sultana</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/neteller.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>10.60 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>7</td>
+	                    <td>2019-09-01</td>
+	                    <td>Sahadat hossain</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/neteller.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>15.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>8</td>
+	                    <td>2019-09-01</td>
+	                    <td>Umme Fatema</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>11.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>9</td>
+	                    <td>2019-09-01</td>
+	                    <td>Mohosin</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>20.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>10</td>
+	                    <td>2019-09-01</td>
+	                    <td>Sohel Raj</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>10.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>11</td>
+	                    <td>2019-08-31</td>
+	                    <td>belal hossain</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>11.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>12</td>
+	                    <td>2019-08-31</td>
+	                    <td>Raihan</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>5.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>13</td>
+	                    <td>2019-08-31</td>
+	                    <td>Mohammad saad</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>15.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>14</td>
+	                    <td>2019-08-31</td>
+	                    <td>Umme Fatema</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>11.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>15</td>
+	                    <td>2019-08-29</td>
+	                    <td>Tarek Ahmed</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/neteller.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>10.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>16</td>
+	                    <td>2019-08-28</td>
+	                    <td>Mosarrof hossain</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/perfect_money.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>11.45 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>17</td>
+	                    <td>2019-08-26</td>
+	                    <td>belal hossain</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>11.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>18</td>
+	                    <td>2019-08-25</td>
+	                    <td>Naime</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>10.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>19</td>
+	                    <td>2019-08-24</td>
+	                    <td>md. borhan uddin</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/coinbase.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>6.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>20</td>
+	                    <td>2019-08-23</td>
+	                    <td>MD.HUMAYON TALUKDER</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>22.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>21</td>
+	                    <td>2019-08-23</td>
+	                    <td>pias</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>10.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>22</td>
+	                    <td>2019-08-23</td>
+	                    <td>pias</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>10.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>23</td>
+	                    <td>2019-08-23</td>
+	                    <td>Md. Parvez Iqbal</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>15.60 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>24</td>
+	                    <td>2019-08-23</td>
+	                    <td>joytis chandra borman</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>30.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>25</td>
+	                    <td>2019-08-22</td>
+	                    <td>Alamin</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>200.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>26</td>
+	                    <td>2019-08-22</td>
+	                    <td>Md. Parvez Iqbal</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>24.30 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>27</td>
+	                    <td>2019-08-21</td>
+	                    <td>Md Morshed alom</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/perfect_money.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>39.13 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>28</td>
+	                    <td>2019-08-21</td>
+	                    <td>MD.HUMAYON TALUKDER</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>11.50 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>29</td>
+	                    <td>2019-08-21</td>
+	                    <td>Tarek</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>10.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <!--<td></td> -->
+	                    <td>30</td>
+	                    <td>2019-08-21</td>
+	                    <td>Mustafiz Sohel</td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/neteller.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>60.00 $</td>
+	                </tr>
+	                	            </table>
+	                                  </div>
+        
+        <div class="col-md-4">
+              	            <h3>Sell Proof</h3>
+	            <table class="table table-bordered">
+	            
+	                <tr>
+	                    <th>Sl</th>
+	                    <th width="100">Date</th>
+	                    <th>Name</th>
+	                    <th>Send Method</th>
+	                    <!--th>Receive Method</th-->
+	                    <th>Amount</th>
+	                </tr>
+	                
+	                	                <tr> 
+	                    <td>1</td>
+	                    <td>2019-03-01</td>
+	                    <td>Md. Parvez Iqbal</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>20.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>2</td>
+	                    <td>2019-02-28</td>
+	                    <td>Alamin</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/paypal.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>20.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>3</td>
+	                    <td>2019-02-28</td>
+	                    <td>MUKTAR</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>14.43 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>4</td>
+	                    <td>2019-02-27</td>
+	                    <td>Sourov Paul</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>50.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>5</td>
+	                    <td>2019-02-27</td>
+	                    <td>Md.Shamim Mizi</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>26.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>6</td>
+	                    <td>2019-02-26</td>
+	                    <td>monayem</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/paypal.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>19.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>7</td>
+	                    <td>2019-02-26</td>
+	                    <td>monayem</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/paypal.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>10.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>8</td>
+	                    <td>2019-02-25</td>
+	                    <td>monayem</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/paypal.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>40.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>9</td>
+	                    <td>2019-02-25</td>
+	                    <td>Fatema Affroj</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/coinbase.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>56.47 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>10</td>
+	                    <td>2019-02-25</td>
+	                    <td>Manik Ratan</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/coinbase.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>10.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>11</td>
+	                    <td>2019-02-25</td>
+	                    <td>Sahadat hossain</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/neteller.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>12.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>12</td>
+	                    <td>2019-02-24</td>
+	                    <td>Tamim khan</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>8.86 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>13</td>
+	                    <td>2019-02-23</td>
+	                    <td>MD.ALAMINE HOSSAIN</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>15.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>14</td>
+	                    <td>2019-02-22</td>
+	                    <td>Sohel Raj</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>46.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>15</td>
+	                    <td>2019-02-22</td>
+	                    <td>Md. Parvez Iqbal</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>20.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>16</td>
+	                    <td>2019-02-21</td>
+	                    <td>Sahadat hossain</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>13.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>17</td>
+	                    <td>2019-02-20</td>
+	                    <td>Abdul momin</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/neteller.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>100.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>18</td>
+	                    <td>2019-02-18</td>
+	                    <td>Md Foysal</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>10.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>19</td>
+	                    <td>2019-02-16</td>
+	                    <td>MD. Mehedi Hasan Munshi</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/perfect_money.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>116.28 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>20</td>
+	                    <td>2019-02-16</td>
+	                    <td>Rashada Akter</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/perfect_money.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>2.50 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>21</td>
+	                    <td>2019-02-15</td>
+	                    <td>sufia khatun</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>4.30 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>22</td>
+	                    <td>2019-02-14</td>
+	                    <td>sayed md faisal</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>40.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>23</td>
+	                    <td>2019-02-14</td>
+	                    <td>MD. Mehedi Hasan Munshi</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/perfect_money.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>100.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>24</td>
+	                    <td>2019-02-14</td>
+	                    <td>sayed md faisal</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>50.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>25</td>
+	                    <td>2019-02-13</td>
+	                    <td>Rashada Akter</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/perfect_money.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>1.50 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>26</td>
+	                    <td>2019-02-13</td>
+	                    <td>MD. Mehedi Hasan Munshi</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>42.05 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>27</td>
+	                    <td>2019-02-12</td>
+	                    <td>sayed md faisal</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>47.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>28</td>
+	                    <td>2019-02-11</td>
+	                    <td>Sourov Paul</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>20.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>29</td>
+	                    <td>2019-02-10</td>
+	                    <td>sayed md faisal</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>30.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>30</td>
+	                    <td>2019-02-09</td>
+	                    <td>Sumon Chandro Roy</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/perfect_money.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <!--td><img src="" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td-->
+	                    <td>14.95 $</td>
+	                </tr>
+	                	            </table>
+	                                  </div>
+        
+        <div class="col-md-4">
+              	            <h3>Exchange Proof</h3>
+	            <table class="table table-bordered">
+	            
+	                <tr>
+	                    <th>Sl</th>
+	                    <th width="100">Date</th>
+	                    <th>Name</th>
+	                    <th>Method</th>
+	                    <th>Amount</th>
+	                </tr>
+	                
+	                	                <tr> 
+	                    <td>1</td>
+	                    <td>2019-01-14</td>
+	                    <td>Abdul Khaleq</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>15.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>2</td>
+	                    <td>2018-12-19</td>
+	                    <td>Sourov Paul</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/neteller.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>47.04 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>3</td>
+	                    <td>2018-10-31</td>
+	                    <td>ripon</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/litecoin.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>9.70 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>4</td>
+	                    <td>2018-10-31</td>
+	                    <td>ripon</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/litecoin.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>9.70 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>5</td>
+	                    <td>2018-10-04</td>
+	                    <td>Md Ali</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>50.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>6</td>
+	                    <td>2018-10-04</td>
+	                    <td>Md Ali</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/skrill.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>50.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>7</td>
+	                    <td>2018-06-24</td>
+	                    <td>mosaref hossen</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/bKash.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>1.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>8</td>
+	                    <td>2018-05-24</td>
+	                    <td>Rakib Ahmed</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/bKash.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>5.00 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>9</td>
+	                    <td>2018-02-10</td>
+	                    <td>Abdullah Al Kyum</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/neteller.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>0.98 $</td>
+	                </tr>
+	                	                <tr> 
+	                    <td>10</td>
+	                    <td>2017-07-02</td>
+	                    <td>Abdullah Al Ahsan</td>
+	                    <td><img src="https://idbsewallet.com/public/images/method_iocn/bKash.jpg" style="margin-top:0;border-radius:50%;width:30px;height:30px;" /></td>
+	                    <td>50.00 $</td>
+	                </tr>
+	                	            </table>
+	                                  </div>
+        
+              
+    </div>
+</div>
+<!-- footer start -->
+	<footer class="wow fadeIn">
+<!-- Primary footer start -->
+	<section class="primary">
+		<div class="container">
+			<div class="row">
+
+
+				<div class="col-md-3">
+					<div class="pri-item">
+						<article>
+							<h3><img class="img-responsive" src="https://idbsewallet.com/public/img/footer_948195.png"></h3>
+							<p>
+								iDBSE Wallet - International Dollar Buy Sell Exchange Wallet 
+							</p>
+							<div class="secondary" style="background: transparent;">
+							    <div class="social-media">
+							        <ul style="text-align: left;">
+							            <li><a href="https://web.facebook.com/www.idbsewallet/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							            <li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
+							            <li><a href="" target="_blank"><i class="fa fa-youtube"></i></a></li>
+							            <li><a href="" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+							        </ul>
+							    </div>
+							    
+							    <!--<div class="social-media">
+							        <ul style="text-align: left;">
+							            <h6>&nbsp;</h6>
+							            <li><b>Total Visitor : </b></li><br/><br/>
+							            <li><b>Online Visitor : </b></li>
+							        </ul>
+							    </div>-->
+							</div>
+						</article>
+						
+					</div>
+					
+				</div>
+
+
+	<!-- marquee -->	
+	<script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js" type="text/javascript"></script> 
+	
+	<script>
+	$(document).ready(function(){
+	    $('.marquee').marquee({
+		 pauseOnHover: true
+	    });
+	});
+	</script>
+
+
+				<!-- div class="col-md-3 col-sm-6">
+					<div class="pri-item">
+						<article>
+							<h3>recent post</h3>							
+						</article>
+
+						<div class="post">
+							<div class="col-xs-3">
+								<div class="row">
+									<figure>
+									</figure>
+								</div>
+							</div>
+							<div class="col-xs-9">								
+								<article>
+									<h4>this is latest post</h4>
+									<h6> <i class="fa fa-calendar"></i> November 12, 2016 </h6>
+								</article>								
+							</div>
+						</div>
+
+						<div class="post">
+							<div class="col-xs-3">
+								<div class="row">
+									<figure>
+									</figure>
+								</div>
+							</div>
+							<div class="col-xs-9">								
+								<article>
+									<h4>this is latest post</h4>
+									<h6> <i class="fa fa-calendar"></i> November 12, 2016 </h6>
+								</article>								
+							</div>
+						</div>
+					</div>
+				</div -->
+
+
+
+
+
+				<div class="col-md-offset-1 col-md-3">
+					<div class="pri-item">
+						<article>
+							<h3>Quick links</h3>							
+						</article>
+
+						<div class="link">
+							<a href="https://idbsewallet.com/#">Home</a>							
+							<a href="https://idbsewallet.com/#service">Service</a>
+							<a href="https://idbsewallet.com/#about">About</a>
+							<a href="https://idbsewallet.com/#faq">FAQs</a>
+							<a href="https://idbsewallet.com/home/agent">Agent</a>
+							<a href="https://idbsewallet.com/#contact">Contact</a>							
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+				<div class="col-md-5">
+					<div class="pri-item">
+						<article>
+							<h3>Contact Info</h3>							
+						</article>
+
+						<div class="info">
+							
+							<div class="icon">
+								<i class="fa fa-map-marker"></i>
+							</div>
+							
+							
+							<article>
+								<h5>Address</h5>
+								<h6>iDBSE Wallet - International </h6>
+							</article>
+							
+						</div>
+
+
+
+						<div class="info">
+							
+							<div class="icon">
+								<i class="fa fa-phone"></i>
+							</div>
+							
+							
+							<article>
+								<h5>Phone</h5>
+								<h6> 009607454646  IMO Viber</h6>
+							</article>
+							
+						</div>
+
+
+
+
+						<div class="info">
+							
+							<div class="icon">
+								<i class="fa fa-envelope"></i>
+							</div>
+							
+							
+							<article>
+								<h5>E-mail</h5>
+								<h6>contact@idbsewallet.com</h6>
+							</article>
+							
+						</div>
+
+
+
+						<div class="info">
+							
+							<div class="icon">
+								<i class="fa fa-globe"></i>
+							</div>
+							
+							
+							<article>
+								<h5>Web site</h5>
+								<h6><a href="www.idbsewallet.com">www.idbsewallet.com</a></h6>
+							</article>
+							
+						</div>
+					</div>
+				</div>
+
+
+			
+
+			</div>
+		</div>
+	</section>
+<!-- Primary footer end -->
+
+
+
+
+
+<!-- secondary footer start-->
+	<section class="secondary">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6"><p>© IDBSE Wallet                         The trusted way ot buy sell and exchange dollar online in Bangladesh.                                        </p></div>
+				<div class="col-sm-6">
+					<div class="social-media">
+						<ul>
+							<!-- <li><a href="https://www.facebook.com/RLBS-Wallet-DOLER-BUY-SELL-314237835689437/"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://www.facebook.com/groups/125646984700595/"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa fa-google"></i></a></li> -->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- secondary footer end-->
+
+
+
+
+
+	</footer>
+<!-- footer end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<script src="https://idbsewallet.com/public/js/new/bootstrap.js" type="text/javascript"></script> 
+	<!-- Lightbox2 Script -->
+
+	
+	<script src="https://idbsewallet.com/public/js/new/lightbox.js" type="text/javascript"></script> 
+	<!-- bootstrap script -->
+		
+
+	<!-- custom script -->
+	<script src="https://idbsewallet.com/public/js/new/script.js" type="text/javascript"></script> 
+	<script src="https://idbsewallet.com/public/js/new/script.js" type="text/javascript"></script> 
+	<!-- light box start -->	
+	<!-- wow animation -->
+	<script src="https://idbsewallet.com/public/js/new/wow.js" type="text/javascript"></script> 
+		
+		<script>
+	    wow = new WOW(
+	      {
+	        animateClass: 'animated',
+	        offset:       100,
+	        callback:     function(box) {
+	          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+	        }
+	      }
+	    );
+	    wow.init();
+	    document.getElementById('moar').onclick = function() {
+	      var section = document.createElement('section');
+	      section.className = 'section--purple wow fadeInDown';
+	      this.parentNode.insertBefore(section, this);
+	    };
+	  </script>
+
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2PlnZawipfMHVDvkKBV5WCZ_ATektARo"></script>
+	  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+        
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(24.758829, 90.389245), // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [
+							    {
+							        "featureType": "administrative",
+							        "elementType": "labels.text.fill",
+							        "stylers": [
+							            {
+							                "color": "#727272"
+							            },
+							            {
+							                "lightness": "0"
+							            },
+							            {
+							                "weight": "5.15"
+							            }
+							        ]
+							    },
+							    {
+							        "featureType": "administrative",
+							        "elementType": "labels.text.stroke",
+							        "stylers": [
+							            {
+							                "visibility": "off"
+							            }
+							        ]
+							    },
+							    {
+							        "featureType": "landscape.man_made",
+							        "elementType": "geometry.fill",
+							        "stylers": [
+							            {
+							                "color": "#c7dedf"
+							            }
+							        ]
+							    },
+							    {
+							        "featureType": "landscape.natural",
+							        "elementType": "all",
+							        "stylers": [
+							            {
+							                "color": "#ebd882"
+							            }
+							        ]
+							    },
+							    {
+							        "featureType": "poi.park",
+							        "elementType": "geometry.fill",
+							        "stylers": [
+							            {
+							                "color": "#9ec48d"
+							            }
+							        ]
+							    },
+							    {
+							        "featureType": "road",
+							        "elementType": "geometry.fill",
+							        "stylers": [
+							            {
+							                "color": "#ffffff"
+							            }
+							        ]
+							    },
+							    {
+							        "featureType": "road",
+							        "elementType": "labels.text.fill",
+							        "stylers": [
+							            {
+							                "color": "#000000"
+							            }
+							        ]
+							    },
+							    {
+							        "featureType": "road",
+							        "elementType": "labels.text.stroke",
+							        "stylers": [
+							            {
+							                "visibility": "off"
+							            }
+							        ]
+							    },
+							    {
+							        "featureType": "road.highway",
+							        "elementType": "geometry.fill",
+							        "stylers": [
+							            {
+							                "visibility": "on"
+							            }
+							        ]
+							    },
+							    {
+							        "featureType": "road.highway",
+							        "elementType": "geometry.stroke",
+							        "stylers": [
+							            {
+							                "visibility": "off"
+							            }
+							        ]
+							    },
+							    {
+							        "featureType": "road.local",
+							        "elementType": "geometry.fill",
+							        "stylers": [
+							            {
+							                "visibility": "on"
+							            }
+							        ]
+							    },
+							    {
+							        "featureType": "water",
+							        "elementType": "geometry",
+							        "stylers": [
+							            {
+							                "visibility": "on"
+							            },
+							            {
+							                "color": "#78c3c9"
+							            }
+							        ]
+							    }
+							]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(24.758829, 90.389245),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+        </script>
+</body>
+</html>

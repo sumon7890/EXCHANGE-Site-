@@ -1,0 +1,373 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
+.header{
+	position: sticky;
+	top: 0;
+	display: block;
+	z-index: 10;
+}
+.navbar{
+		background-image: linear-gradient(to right, #a517ba,#5f1782);
+		padding: 0;
+}
+
+.header img{
+	width: 100px;
+	height: 35px;
+	margin-left: 80px;
+}
+.navbar-nav{
+	padding: 0 20px;
+
+}
+#navbarNav .navbar-nav ul{
+	padding: 0 30px;
+}
+#navbarNav .navbar-nav li{
+	transition: all 0.3s;
+	min-height: 45px;
+	float: right;
+}
+#navbarNav .navbar-nav li a{
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Libre Baskerville', serif; 
+
+
+}
+#navbarNav .navbar-nav li:hover{
+	background:darkorange;
+}
+
+
+
+
+
+
+
+
+
+.banner img {
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+
+} 
+.banner {
+    margin-top: -23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.reserved-box {
+	background-image: linear-gradient(to right, #a517ba,#5f1782);
+	margin-top: 40px;
+	padding: 10px;
+	color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 0 5px #000;
+	height: 150px;
+	display: table;
+	width: 100%;
+	cursor: pointer;
+
+}
+.reserved-box:hover{
+	box-shadow: 0px 0px 0px 8px #000000, 0px 0px 0px 16px #4B4C4B, 0px 0px 0px 24px #828482, 0px 0px 0px 31px #B2B5B2, 0px 0px 0px 39px #DADDDA, 33px 29px 2px -4px rgba(174,255,124,0);
+}
+	.reserved-text {
+	display: table-cell;
+	vertical-align: middle;
+}
+.reserved h2{
+	color: darkorange;
+	font-weight:bold;
+	font-size: 40px;
+	text-transform: uppercase;
+	font-family: 'Libre Baskerville', serif;
+	margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+.new_new_service_area1 {
+	background-image: linear-gradient(to right, #c9cbe6,#ea030c);
+	min-height: 300px;
+	border-right: 1px solid rgba(200, 29, 38, 0.2);
+	width: 356px;
+	margin-left: 20px;
+	margin-top: 52px;
+	border-radius: 10px;
+	padding: 50px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.new_new_service_area1 h3{
+	color: #373737;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Libre Baskerville', serif;
+    text-shadow: 2px -2px 0px rgba(55,27,136,0.87);
+}
+
+.new_new_service_area i {
+	font-size: 50px;
+	margin-top: 20px;
+}
+
+.Exchange h3{
+
+	font-weight: 700;
+	font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+
+}
+.Exchange p{
+	font-size: 14px;
+	color: black;
+}
+    
+.new_new_service_area2 {
+	background-image: linear-gradient(to right, #c9cbe6,#ea030c);
+	min-height: 300px;
+	border-right: 1px solid rgba(200, 29, 38, 0.2);
+	width: 356px;
+	margin-left: 20px;
+	margin-top: 52px;
+	border-radius: 10px;
+	padding: 50px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.new_new_service_area3{
+	background-image: linear-gradient(to right, #c9cbe6,#ea030c);
+	min-height: 300px;
+	border-right: 1px solid rgba(200, 29, 38, 0.2);
+	width: 356px;
+	margin-left: 20px;
+	margin-top: 52px;
+	border-radius: 10px;
+	padding: 50px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.new_new_service_area3:hover{
+	background: darkorange;
+}
+
+.new_new_service_area2:hover{
+	background: darkorange;
+}
+.new_new_service_area1:hover{
+	background: darkorange;
+}
+.qustion{
+	margin-top: 30px;
+	background: greenyellow;
+	display: block;
+}
+.qustion h1 {
+	color: #222;
+	font-size: 40px;
+	font-weight: 900;
+	font-family: 'Libre Baskerville', serif;
+	text-align: center;
+	padding: 5px 96px;
+	line-height: 62px;
+	border: 2px solid #600f0f;
+	box-shadow: 10px 10px 10px 10px rgba(0,0,0,75);
+	margin-top: 4px;
+
+}
+
+
+/*-------Serivice-----------*/
+
+
+
+
+.product{
+	margin-top: 80px;
+	 margin-left: 46px;
+}
+
+.product .content .content-item {
+    max-width: 360px;
+    width: 100%;
+    padding: 20px 10px;
+    background: #fff;
+    margin: 10px auto;
+}
+.product .head {
+    overflow: hidden;
+    clear: both;
+}
+.product .content .content-item .icon {
+    width: 60px;
+    height: 60px;
+    background: #687074;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: auto;
+}
+.product .content .content-item article p {
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.product .head  h1{
+	color: darkorange;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 40px;
+    text-align: center;
+    display: inline;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-wid{
+    padding:30px 0;
+}
+.footer-top-area{
+	
+	background-color:#222;
+	color:#fff;
+    margin-top:100px;
+}
+
+.footer-bar-item1{
+    border:1px solid #403f3f;
+    margin-top:100px;
+   
+}
+.footer-bar-item{
+    border:1px solid #403f3f;
+}
+.footer-bar-item p{
+	text-align: justify-all;
+}
+.footer-top-area a{
+	color:#fff;
+}
+.footer-top-area ul li {
+	color:#fff;
+	list-style:none;
+	text-decoration:none;
+}
+
+
+ input[type="email"]{
+    background-color: #222222;
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    color: darkgoldenrod;
+}
+
+.footer-top-area{
+    background-color:#000000;
+}
+.foter i.fa{
+	padding:10px;
+	color:#fc721e;
+}
+.foter i.fa{
+	border:1px solid #636262;
+	background-color:#0b0b0b;
+	border-radius:50%;
+	color:#fff;
+}
+.foter i.fa:hover{
+	background-color:#fc721e;
+	color:#fff;
+}
+.unline{
+	width:40%;
+	height:1px;
+	background-color:#fc721e;
+	margin-left:0;
+}
+.footer-logo{
+	color:#fff;
+	background-color:transparent;
+	border:2px solid #fff;
+}
+.footer-wid i{
+	color:#fc721e;
+	padding-right:8px;
+}
+.footer-wid{
+	margin-left:40px;.factory-bar{
+    margin-top:30px;
+}
+
+.footer-wid a:hover{
+	text-decoration:none;
+	color:#e35600;
+}
+
+.factory-bar{
+    margin-top:30px;
+}
